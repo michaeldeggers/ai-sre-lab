@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: incident-bot
+spec:
+  selector:
+    app: incident-bot
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
